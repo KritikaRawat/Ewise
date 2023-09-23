@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
+import "../styles/bargain.css";
 function BargainPrice() {
   const [currentPrice, setCurrentPrice] = useState(100);
 
@@ -33,7 +33,9 @@ function BargainPrice() {
         <button className="control-button" id="green" onClick={decreasePrice}>
           -50
         </button>
-        <span className="price" id="currentPrice">${currentPrice}</span>
+        <span className="price" id="currentPrice">
+          ${currentPrice}
+        </span>
         <button className="control-button" id="red" onClick={increasePrice}>
           +50
         </button>
