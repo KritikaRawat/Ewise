@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
 
 
-export default function Signup() {
+export default function SellerSignup() {
  const [sellerCredential, setsellerCredential] = useState({name:"", email:"", password:"", sellerType:"", Address:"", geolocation:"", imglink:"", PhoneNum:""})
  const handleSubmit= async(e)=>{
   e.preventDefault();
@@ -69,7 +69,7 @@ export default function Signup() {
        </div>
 
        <button type="submit" className="m-3 btn btn-primary">Submit</button>
-       <Link to="/login" className='m-3 btn btn-danger'>Already a user</Link>
+       <Link to="/loginseller" className='m-3 btn btn-danger'>Already a user</Link>
      </form>
     </div>
     </>
