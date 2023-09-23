@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.price {
+  font-size: 36px;
+  margin: 0 20px;
+}
+
+.control-button,
+.proceed {
+  font-size: 24px;
+  cursor: pointer;
+}
+#green {
+  background-color: rgb(127, 170, 127);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#red {
+  background-color: red;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.phone {
+  margin-left: 10%;
+  float: left;
+}
+.proceed {
+  background-color: rgb(202, 191, 191);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}

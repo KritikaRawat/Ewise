@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Price</title>
+    <link rel="stylesheet" href="./styles/bargain.css">
+</head>
+<body>
+    <div class="phone">
+        <label for="phone" >Enter Your Product:</label>
+        <input type="text" id="phone">
+    </div>
+    <div class="price-container">
+        
+        <button class="control-button" id="green" onclick="decreasePrice()">-50</button>
+        <span class="price" id="currentPrice">$100</span>
+        <button class="control-button" id="red" onclick="increasePrice()">+50</button>
+        
+    </div>
+    <div class="price-container">
+        <button class="proceed">Proceed</button>
+    </div>
+</body>
+</html>
