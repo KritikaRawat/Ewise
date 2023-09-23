@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap");
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -48,4 +49,9 @@ body {
   padding-bottom: 10px;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.scrollable-container {
+  max-height: 1000px;
+  overflow-y: auto;
 }

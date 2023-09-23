@@ -12,6 +12,7 @@ import BuyerSignup from "./screens/BuyerSignup";
 import Home from "./screens/Home";
 import BargainPrice from "./screens/BargainPrice";
 import Blogs from "./screens/Blogs";
+
 function App() {
   return (
     <Router>

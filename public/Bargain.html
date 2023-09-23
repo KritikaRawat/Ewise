@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auction Price</title>
-    <link rel="stylesheet" href="./styles/bargain.css">
-</head>
-<body>
-    <div class="phone">
-        <label for="phone" >Enter Your Product:</label>
-        <input type="text" id="phone">
+    <link rel="stylesheet" href="./styles/bargain.css" />
+  </head>
+  <body>
+    <div>
+      <!-- Example single danger button -->
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-danger dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Action
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
     </div>
-    <div class="price-container">
-        
-        <button class="control-button" id="green" onclick="decreasePrice()">-50</button>
-        <span class="price" id="currentPrice">$100</span>
-        <button class="control-button" id="red" onclick="increasePrice()">+50</button>
-        
-    </div>
-    <div class="price-container">
-        <button class="proceed">Proceed</button>
-    </div>
-</body>
+  </body>
 </html>
