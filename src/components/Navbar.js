@@ -33,11 +33,11 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item ms-5 me-3">
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link" to="/about">
                 About
               </Link>
             </li>
-            <Dropdown className="ms-3 ms-5">
+            <Dropdown className="ms-5">
               <Dropdown.Toggle variant="info" id="dropdown-basic">
                 Are you Link Seller/Buyer?
               </Dropdown.Toggle>
