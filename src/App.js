@@ -1,4 +1,3 @@
-
 import "../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -68,6 +67,8 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/createseller" element={<SellerSignup />} />
           <Route exact path="/createbuyer" element={<BuyerSignup />} />
+          <Route exact path="/loginbuyer" element={<BuyerLogin />} />
+          <Route exact path="/loginseller" element={<SellerLogin />} />
         </Routes>
       </div>
     </Router>
