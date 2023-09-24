@@ -17,6 +17,7 @@ app.use(express.json())
 
 app.use('/api', require("./Routes/BuyerUsers"));
 app.use('/api', require("./Routes/SellerUsers"));
+app.use('/api', require("./Routes/RegSellers"));
 
 app.get('/', (req, res) => {
   res.send('Hello World! ---------------')

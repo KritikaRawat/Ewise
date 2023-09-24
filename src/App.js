@@ -12,6 +12,7 @@ import BuyerSignup from "./screens/BuyerSignup";
 import Home from "./screens/Home";
 import BargainPrice from "./screens/BargainPrice";
 import Blogs from "./screens/Blogs";
+import Marketplace from "./screens/Marketplace";
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/createbuyer" element={<BuyerSignup />} />
           <Route exact path="/loginbuyer" element={<BuyerLogin />} />
           <Route exact path="/loginseller" element={<SellerLogin />} />
+          <Route exact path="/getsellers" element={<Marketplace />} />
           <Route exact path="/auction" element={<BargainPrice />} />
         </Routes>
       </div>

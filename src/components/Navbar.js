@@ -19,6 +19,15 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" to="/getsellers">
+                  List
+                </Link>
+              </li>
+            </ul>
+          </div>
           <Dropdown>
             <Dropdown.Toggle variant="secondary" id="dropdown-basic">
               Are you a Seller/Buyer?
