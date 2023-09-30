@@ -1,0 +1,42 @@
+/* SellerSignup.css */
+
+/* Style for the container */
+.container {
+ max-width: 1000px; /* Adjust as needed */
+ margin: 0 auto;
+ padding: 20px;
+}
+
+/* Style for form labels */
+label {
+ font-weight: bold;
+}
+
+/* Style for input fields */
+.form-control {
+ margin-bottom: 15px;
+}
+
+/* Style for the submit button */
+.btn-primary {
+ background-color: #007bff;
+ color: #fff;
+}
+
+/* Style for the "Already a user" button */
+.btn-danger {
+ background-color: #dc3545;
+ color: #fff;
+}
+
+/* Additional styles for the image */
+.image-container {
+ text-align:left; /* Center the image horizontally */
+}
+
+.image-style {
+ max-width: 100%; /* Adjust the maximum width of the image */
+ height: 500px; /* Maintain aspect ratio */
+ border-radius: 5px; /* Rounded corners */
+ margin-top: 10px; /* Adjust the margin as needed */
+}

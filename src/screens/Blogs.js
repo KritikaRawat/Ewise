@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import blog1 from "../images/blog1.png";
 import blog2 from "../images/blog2.png";
 import { Link } from "react-router-dom";
@@ -36,6 +37,9 @@ export default function Blogs() {
             </Link>
           </div>
         </div>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );

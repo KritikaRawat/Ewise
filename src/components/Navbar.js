@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Link className="navbar-brand me-5 ms-5" to="/blogs">
+        <Link className="navbar-brand me-5 ms-5" to="/">
           <img src={logo} />
         </Link>
         <div className="collapse navbar-collapse ms-5" id="navbarNavDropdown">
@@ -39,7 +39,7 @@ export default function Navbar() {
             </li>
             <Dropdown className="ms-5">
               <Dropdown.Toggle variant="info" id="dropdown-basic">
-                Are you Link Seller/Buyer?
+                Are You A Seller/Buyer?
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="bg-dark ms-4 mt-2">

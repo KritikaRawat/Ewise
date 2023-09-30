@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/Navigation";
 import homeImg from "../images/home.png";
 import location from "../images/location.png";
 import "../styles/bargain.css";
 
-export default function Home() {
+export default function home1() {
   // <<<<<<< HEAD
 
   // =======

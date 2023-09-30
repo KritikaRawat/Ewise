@@ -83,11 +83,11 @@ export default function SellerLogin() {
    <div className='container'>
     <form onSubmit={handleSubmit}>
        <div className="m-3 form-group">
-         <label htmlFor="email">Email</label>
+         <label htmlFor="email" style={{ fontWeight: 'bold', color:'skyblue' }}>Email</label>
          <input type="email" className="form-control" placeholder="Enter the email" name='email' value={sellerCredential.email} onChange={onChange}/>
        </div>
        <div className="m-3 form-group">
-         <label htmlFor="password">Password</label>
+         <label htmlFor="password" style={{ fontWeight: 'bold', color:'skyblue' }}>Password</label>
          <input type="password" className="form-control" placeholder="Enter Password" name='password' value={sellerCredential.password} onChange={onChange}/>
        </div>
 

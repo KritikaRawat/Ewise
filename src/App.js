@@ -10,6 +10,7 @@ import SellerSignup from "./screens/SellerSignup";
 import BuyerLogin from "./screens/BuyerLogin";
 import BuyerSignup from "./screens/BuyerSignup";
 import Home from "./screens/Home";
+import Home1 from "./screens/home1";
 import BargainPrice from "./screens/BargainPrice";
 import Blogs from "./screens/Blogs";
 // <<<<<<< HEAD
@@ -17,6 +18,9 @@ import Marketplace from "./screens/Marketplace";
 // =======
 import Blog1 from "./screens/Blog1";
 import Blog2 from "./screens/Blog2";
+import About from "./screens/About";
+import Contact from "./screens/Contact";
+import Shop1 from "./screens/Shop1";
 
 // >>>>>>> c3252c614966df32e48f32112ef03f63e4f4a85b
 function App() {
@@ -25,9 +29,13 @@ function App() {
       <div>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home1 />} />
+          <Route exact path="/shop1" element={<Shop1 />} />
           <Route exact path="/blogs" element={<Blogs />} />
           <Route exact path="/blog1" element={<Blog1 />} />
           <Route exact path="/blog2" element={<Blog2 />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/createseller" element={<SellerSignup />} />
           <Route exact path="/createbuyer" element={<BuyerSignup />} />
           <Route exact path="/loginbuyer" element={<BuyerLogin />} />

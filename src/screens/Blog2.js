@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import blog2 from "../images/blog2.png";
 
@@ -13,7 +14,7 @@ export default function Blog1() {
           <img src={blog2}></img>
         </div>
         <div>
-          <h1 style={{ marginTop: 120, marginLeft: 0 }}>
+          <h1 style={{ marginTop: 120, marginLeft: 0 , color: 'skyblue' }}>
             Effects of Wrong Disposal of E-Waste
           </h1>
         </div>
@@ -30,7 +31,7 @@ export default function Blog1() {
           e-waste. The consequences of mishandling e-waste are far-reaching and
           threaten not only our environment but also our health and well-being.
         </p>
-        <bold style={{ fontSize: "30px" }}>Environmental Degradation:</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>Environmental Degradation:</bold>
         <p>
           One of the most pressing concerns of incorrect e-waste disposal is its
           detrimental impact on the environment. Electronic devices often
@@ -43,7 +44,7 @@ export default function Blog1() {
           climate change. As landfills continue to overflow with e-waste, the
           long-term environmental consequences become increasingly dire.
         </p>
-        <bold style={{ fontSize: "30px" }}>Health Hazards</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>Health Hazards</bold>
         <p>
           The effects of e-waste mismanagement extend beyond the environment.
           Those living near e-waste dumping sites or recycling facilities face
@@ -57,7 +58,7 @@ export default function Blog1() {
           health issues, including developmental delays and learning
           disabilities.
         </p>
-        <bold style={{ fontSize: "30px" }}>Resource Depletion</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>Resource Depletion</bold>
         <p>
           Another significant consequence of improper e-waste disposal is the
           squandering of valuable resources. Electronic devices contain precious
@@ -68,7 +69,7 @@ export default function Blog1() {
           depletion of natural resources further exacerbates environmental
           degradation.
         </p>
-        <bold style={{ fontSize: "30px" }}>Global Ramifications</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>Global Ramifications</bold>
         <p>
           E-waste is a global problem, and its repercussions extend far beyond
           the boundaries of individual countries. Developed nations often export
@@ -77,7 +78,7 @@ export default function Blog1() {
           as e-waste dumping, has led to severe environmental and health crises
           in countries ill-equipped to handle the influx of electronic waste.
         </p>
-        <bold style={{ fontSize: "30px" }}>Solutions</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>Solutions</bold>
 
         <p>
           To mitigate the effects of wrong e-waste disposal, several steps must
@@ -103,7 +104,7 @@ export default function Blog1() {
           electronic devices with longer lifespans, easier repairability, and
           recyclable components.
         </p>
-        <bold style={{ fontSize: "30px" }}>Conclusion</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>Conclusion</bold>
         <p>
           In conclusion, the effects of wrong disposal of e-waste are
           far-reaching and deeply concerning. It's imperative that individuals,
@@ -113,6 +114,9 @@ export default function Blog1() {
           can we hope to mitigate the environmental, health, and global
           consequences of e-waste mismanagement.
         </p>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import blog1 from "../images/blog1.png";
 
 export default function Blog1() {
@@ -13,7 +14,7 @@ export default function Blog1() {
           <img src={blog1}></img>
         </div>
         <div>
-          <h1 style={{ marginTop: 120, marginLeft: 100 }}>E-Waste</h1>
+          <h1 style={{ marginTop: 120, marginLeft: 100, color: 'skyblue' }}>E-Waste</h1>
         </div>
       </div>
       <div style={{ margin: 50, marginTop: 0 }}>
@@ -27,7 +28,7 @@ export default function Blog1() {
           dependence on electronic gadgets grows, so does the problem of
           electronic waste, or e-waste.
         </p>
-        <bold style={{ fontSize: "30px" }}>What is E-Waste?</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>What is E-Waste?</bold>
         <p>
           E-waste refers to discarded electronic devices, components, and
           accessories that are no longer in use. This includes everything from
@@ -36,7 +37,7 @@ export default function Blog1() {
           electronic devices have shorter lifespans, leading to a surge in
           e-waste generation.
         </p>
-        <bold style={{ fontSize: "30px" }}>The Environmental Impact</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>The Environmental Impact</bold>
         <p>
           The improper disposal of e-waste poses a significant threat to our
           environment. Many electronic devices contain hazardous materials,
@@ -50,7 +51,7 @@ export default function Blog1() {
           devices through responsible e-waste management, we can alleviate some
           of these environmental burdens.
         </p>
-        <bold style={{ fontSize: "30px" }}>The Economic Value of E-Waste</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>The Economic Value of E-Waste</bold>
         <p>
           E-waste isn't just a burden on the environment; it's also a missed
           economic opportunity. Many electronic devices contain valuable
@@ -58,7 +59,7 @@ export default function Blog1() {
           recycled, these materials can be recovered and reused, reducing the
           demand for mining and saving energy in the production of new devices.
         </p>
-        <bold style={{ fontSize: "30px" }}>Responsible E-Waste Management</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>Responsible E-Waste Management</bold>
         <p>
           To combat the growing problem of e-waste, responsible e-waste
           management is crucial. Here are some steps individuals and businesses
@@ -89,7 +90,7 @@ export default function Blog1() {
           promote responsible e-waste management and extended producer
           responsibility.
         </p>
-        <bold style={{ fontSize: "30px" }}>Conclusion</bold>
+        <bold style={{ fontSize: "30px", color: 'skyblue' }}>Conclusion</bold>
         <p>
           E-waste is a growing environmental concern that demands our attention.
           The improper disposal of electronic devices harms our planet,
@@ -101,6 +102,9 @@ export default function Blog1() {
           cost of e-waste and the role you can play in mitigating this
           growing problem.
         </p>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );
