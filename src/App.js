@@ -21,6 +21,7 @@ import Blog2 from "./screens/Blog2";
 import About from "./screens/About";
 import Contact from "./screens/Contact";
 import Shop1 from "./screens/Shop1";
+import SelectItems from "./screens/SelectItems.js";
 
 // >>>>>>> c3252c614966df32e48f32112ef03f63e4f4a85b
 function App() {
@@ -42,6 +43,7 @@ function App() {
           <Route exact path="/loginseller" element={<SellerLogin />} />
           <Route exact path="/getsellers" element={<Marketplace />} />
           <Route exact path="/auction" element={<BargainPrice />} />
+          <Route exact path="/selectitems" element={<SelectItems />} />
         </Routes>
       </div>
     </Router>
