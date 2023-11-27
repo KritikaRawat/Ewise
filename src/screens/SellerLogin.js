@@ -20,7 +20,13 @@ export default function SellerLogin() {
   if(!json.success){
    alert("Enter Valid Credentials")
   }
+  // if(json.success){
+  //  navigate("/");
+  // }
+
   if(json.success){
+    localStorage.setItem("authToken", json.authToken);
+    console.log(localStorage.getItem("authToken"))
    navigate("/");
   }
  }
