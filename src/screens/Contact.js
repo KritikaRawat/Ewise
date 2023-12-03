@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navigation from "../components/Navigation";
+import Navigation from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/bargain.css";
 export default function Contact() {
@@ -51,9 +51,9 @@ export default function Contact() {
         <Navigation />
       </div>
       <div className="mt-5">
-        <h1>CONTACT US</h1>
+        <h1 style = {{color: "black", marginLeft: "20px"}}>CONTACT US</h1>
       </div>
-      <div style={{ marginLeft: 400 }}>
+      <div style={{ marginLeft: 375 }}>
         <div
           style={{
             backgroundColor: "#323232",
@@ -96,7 +96,7 @@ export default function Contact() {
       </div>
       <div>
         <div className="mt-5">
-          <h1>FAQ</h1>
+          <h1 style = {{color: "black"}}>FAQ</h1>
         </div>
         <div className="faq-container">
           {faqs.map((faq, index) => (

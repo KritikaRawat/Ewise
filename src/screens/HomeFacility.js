@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavbarFacility";
+import Footer from "../components/Footer";
 import homeImg from "../images/home.png";
 import location from "../images/location.png";
 import "../styles/bargain.css";
 
-export default function home1() {
+export default function HomeFacility() {
   // <<<<<<< HEAD
 
   // =======
@@ -23,14 +24,14 @@ export default function home1() {
       <div className="h-400" style={{ marginTop: 108, marginLeft: 100 }}>
         <form className="d-flex mt-5 ms-5" style={{ width: 600 }}>
           <input
-            style={{ borderRadius: 20 }}
+            style={{ borderRadius: 20, height: 50, backgroundColor: '#f5f5f5'  }}
             className="form-control mr-2"
             type="search"
             placeholder="What Are You Looking For?"
             aria-label="Search"
           />
           <button
-            style={{ borderRadius: 20 }}
+            style={{ borderRadius: 20, height: 50 }}
             className="btn btn-info ms-3"
             type="submit"
           >
@@ -53,8 +54,8 @@ export default function home1() {
         <br />
         <br />
         <div style={{ fontFamily: "Plus Jakarta Sans", marginRight: 500 }}>
-          <h1>Make Every</h1>
-          <h1>Gadget Count!</h1>
+          <h1 style = {{color: "black"}}>Make Every</h1>
+          <h1 style = {{color: "black"}}>Gadget Count!</h1>
         </div>
         <br />
         <div className="d-flex">
@@ -63,7 +64,7 @@ export default function home1() {
             type="search"
             placeholder="Location"
             aria-label="Search"
-            style={{ width: 200, marginLeft: 240 }}
+            style={{ width: 200, marginLeft: 240, backgroundColor: '#f5f5f5'  }}
           />
           <div>
             <img src={location} style={{ height: 30 }} className="ms-2"></img>

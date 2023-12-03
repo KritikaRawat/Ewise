@@ -14,6 +14,7 @@ import Home1 from "./screens/home1";
 import BargainPrice from "./screens/BargainPrice";
 import Blogs from "./screens/Blogs";
 // <<<<<<< HEAD
+import SellerList from "./screens/SellerList.js";
 import Marketplace from "./screens/Marketplace";
 // =======
 import Blog1 from "./screens/Blog1";
@@ -22,6 +23,8 @@ import About from "./screens/About";
 import Contact from "./screens/Contact";
 import Shop1 from "./screens/Shop1";
 import SelectItems from "./screens/SelectItems.js";
+import HomeFacility from "./screens/HomeFacility.js";
+import Product from "./screens/Product.js";
 
 // >>>>>>> c3252c614966df32e48f32112ef03f63e4f4a85b
 function App() {
@@ -41,9 +44,11 @@ function App() {
           <Route exact path="/createbuyer" element={<BuyerSignup />} />
           <Route exact path="/loginbuyer" element={<BuyerLogin />} />
           <Route exact path="/loginseller" element={<SellerLogin />} />
-          <Route exact path="/getsellers" element={<Marketplace />} />
+          <Route exact path="/marketplace" element={<Marketplace />} />
           <Route exact path="/auction" element={<BargainPrice />} />
           <Route exact path="/selectitems" element={<SelectItems />} />
+          <Route exact path="/HomeFacility" element={<HomeFacility />} />
+          <Route exact path="/Product" element={<Product />} />
         </Routes>
       </div>
     </Router>

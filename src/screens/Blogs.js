@@ -10,10 +10,11 @@ export default function Blogs() {
       <div>
         <Navbar />
       </div>
+
       <div className="d-flex" style = {{marginLeft: 90, marginTop: 80}}>
-        <div className="card m-2 ms-5 me-5" style={{ width: 450, height: 400 }}>
+        <div className="card m-2 ms-5 me-5" style={{ width: 450, height: 400, backgroundColor: "white", boxShadow: "10px 14px 10px rgba(0, 0, 0, 0.2)" }}>
           <img className="card-img-top" src={blog1} alt="Card image cap" />
-          <div className="card-body">
+          <div className="card-body" style = {{color: "black"}}>
             <h5 className="card-title">E-Waste</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
@@ -24,9 +25,9 @@ export default function Blogs() {
             </Link>
           </div>
         </div>
-        <div className="card m-2 ms-5" style={{ width: 450, height: 400 }}>
+        <div className="card m-2 ms-5" style={{ width: 450, height: 400 , backgroundColor: "white", boxShadow: "10px 14px 10px rgba(0, 0, 0, 0.2)"}}>
           <img className="card-img-top" src={blog2} alt="Card image cap" />
-          <div className="card-body">
+          <div className="card-body" style = {{color: "black"}}>
             <h5 className="card-title">Effects of Wrong Disposal</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the

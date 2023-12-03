@@ -16,4 +16,16 @@ router.post("/createprice", async(req, res) =>{
  }
 })
 
+router.get('/getprices', async (req, res) => {
+    try {
+      const prices = await Itemsprice.find({}, 'name price'); // Retrieve only 'name' and 'price' fields
+      res.json({ success: true, prices });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ success: false, message: 'Server Error' });
+    }
+  });
+  
+
+
 module.exports = router;
