@@ -51,6 +51,7 @@ app.use('/api', require("./Routes/BuyerUsers"));
 app.use('/api', require("./Routes/SellerUsers"));
 app.use('/api', require("./Routes/RegSellers"));
 app.use('/api', require("./Routes/Createitemsprice"));
+app.use('/api', require("./Routes/OrderData"));
 
 app.get('/', (req, res) => {
   res.send('Hello World! ---------------')

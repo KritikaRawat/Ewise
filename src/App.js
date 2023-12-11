@@ -13,10 +13,9 @@ import Home from "./screens/Home";
 import Home1 from "./screens/home1";
 import BargainPrice from "./screens/BargainPrice";
 import Blogs from "./screens/Blogs";
-// <<<<<<< HEAD
+
 import SellerList from "./screens/SellerList.js";
 import Marketplace from "./screens/Marketplace";
-// =======
 import Blog1 from "./screens/Blog1";
 import Blog2 from "./screens/Blog2";
 import About from "./screens/About";
@@ -25,11 +24,16 @@ import Shop1 from "./screens/Shop1";
 import SelectItems from "./screens/SelectItems.js";
 import HomeFacility from "./screens/HomeFacility.js";
 import Product from "./screens/Product.js";
+import { CartProvider } from "./components/ContextReducer.js";
+import MyOrder from './screens/MyOrder.1.js';
+import Option from "./screens/Option.js";
+import Additemsdonate from "./screens/Additemsdonate.js";
 
 // >>>>>>> c3252c614966df32e48f32112ef03f63e4f4a85b
 function App() {
   return (
-    <Router>
+    <CartProvider>
+      <Router>
       <div>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -49,9 +53,14 @@ function App() {
           <Route exact path="/selectitems" element={<SelectItems />} />
           <Route exact path="/HomeFacility" element={<HomeFacility />} />
           <Route exact path="/Product" element={<Product />} />
+          <Route exact path="/myOrder" element={<MyOrder />} />
+          <Route exact path="/Option" element={<Option />} />
+          <Route exact path="/Additemstodonate" element={<Additemsdonate />} />
+
         </Routes>
       </div>
     </Router>
+    </CartProvider>
   );
 }
 

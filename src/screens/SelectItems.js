@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import '../styles/YourComponent.css';
 import Navbar from '../components/Navbar';
 import SellerList from './SellerList';
+import { useDispatchCart, useCart } from '../components/ContextReducer';
 
 export default function SelectItems() {
+  let dispatch = useDispatchCart();
+  let data = useCart();
   const [itemDetails, setItemDetails] = useState({ itemName: "", price: "" });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your logic for handling item submission, e.g., sending a request to the server.
     const resp = await fetch("http://localhost:5000/api/createprice", {
       method: 'POST',
       headers: {
@@ -28,6 +30,11 @@ export default function SelectItems() {
     setItemDetails({ ...itemDetails, [event.target.name]: event.target.value });
   };
 
+  const handleAddtoCart = async () => {
+    await dispatch({ type: "ADD", name: itemDetails.itemName, price: itemDetails.price });
+    console.log(data);
+  };
+  
   return (
     <div>
       <div>
@@ -62,7 +69,7 @@ export default function SelectItems() {
           />
         </div>
         <div className="col-md-4">
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-primary" onClick={handleAddtoCart}>Add To cart</button>
         </div>
       </form>
     </div>

@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import logo from "../images/logo.png";
+import Modal from "../Modal";
+import Cart from "../screens/Cart";
 
 export default function Navbar() {
+  const [cartView, setCartView] = useState(false);
   const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem("authToken");
@@ -67,6 +70,12 @@ export default function Navbar() {
               </div>
             ) : (
               <div style = {{ marginRight: "20px"}}>
+                <div
+                  className="btn bg-info mx-1" onClick={()=>setCartView(true)}
+                  style={{ textDecoration: "none", color: "Red", marginRight: "20px" }}>
+                  Cart
+                </div>
+                {cartView? <Modal onClose={()=>setCartView(false)}><Cart/></Modal>: null}
                 <div
                   className="btn bg-info mx-1"
                   style={{ textDecoration: "none", color: "white", marginRight: "20px" }}

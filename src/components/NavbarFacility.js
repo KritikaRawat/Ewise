@@ -30,7 +30,7 @@ export default function NavbarFacility() {
               </li>
             ) : (
               <li className="nav-item ms-5 me-3">
-                <Link className="nav-link active" to="/product">
+                <Link className="nav-link active" to="/myOrder">
                   My Marketplace
                 </Link>
               </li>

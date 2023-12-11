@@ -80,7 +80,7 @@ export default function Home() {
         <div style={{ marginRight: 480 }}>
           <button type="button" class="btn btn-info">
             <Link
-              to="/getSellers"
+              to="/Option"
               style={{ textDecoration: "none", color: "white" }}
             >
               Explore E-Wise

@@ -78,6 +78,7 @@ export default function BuyerLogin() {
       alert("Enter Valid Credentials");
     }
     if (json.success) {
+      localStorage.setItem("userEmail", sellerCredential.email);
       localStorage.setItem("authToken", json.authToken);
       console.log(localStorage.getItem("authToken"));
       navigate("/shop1");
