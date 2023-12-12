@@ -48,7 +48,7 @@ export default function Cart() {
               <th scope='col' >#</th>
               <th scope='col' >Name</th>
               <th scope='col' >Price</th>
-              <th scope='col' ></th>
+              <th scope='col' >Email</th>
             </tr>
           </thead>
           <tbody>
@@ -57,6 +57,7 @@ export default function Cart() {
                 <th scope='row' >{index + 1}</th>
                 <td >{itemDetails.name}</td>
                 <td>{itemDetails.price}</td>
+                <td>{itemDetails.email}</td>
                 <td ><button type="button" className="btn p-0"><img src={trash} alt="delete" onClick={()=>{dispatch({type: "REMOVE", index: index}) }}/></button> </td></tr>
             ))}
           </tbody>

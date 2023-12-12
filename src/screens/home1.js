@@ -6,15 +6,11 @@ import location from "../images/location.png";
 import "../styles/bargain.css";
 
 export default function home1() {
-  // <<<<<<< HEAD
-
-  // =======
   const imgStyle = {
     position: "fixed",
     top: 100,
     right: 50,
   };
-  // >>>>>>> c3252c614966df32e48f32112ef03f63e4f4a85b
   return (
     <div className="scrollable-container">
       <div>

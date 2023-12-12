@@ -25,7 +25,7 @@ import SelectItems from "./screens/SelectItems.js";
 import HomeFacility from "./screens/HomeFacility.js";
 import Product from "./screens/Product.js";
 import { CartProvider } from "./components/ContextReducer.js";
-import MyOrder from './screens/MyOrder.1.js';
+import MyOrder from './screens/MyOrder.js';
 import Option from "./screens/Option.js";
 import Additemsdonate from "./screens/Additemsdonate.js";
 
