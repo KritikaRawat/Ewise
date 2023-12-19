@@ -23,7 +23,8 @@ const SellerSchema = new Schema({
   required: true
  },
  imglink:{
-  type: String,
+  type: Buffer,
+  contentType: String,
   required: true
  },
  mapLink:{

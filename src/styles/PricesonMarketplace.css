@@ -1,0 +1,25 @@
+/* body {
+ background-image: url('../images/bg.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ margin: 0;
+} */
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+h1 {
+ margin-top: 50px;
+ color: rgb(37, 111, 37);
+}
+
+.card {
+ border: 1px solid #ccc;
+ width: 400px;
+ border-radius: 8px;
+ margin: 10px;
+ padding: 10px;
+}

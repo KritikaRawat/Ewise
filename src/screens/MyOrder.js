@@ -23,12 +23,6 @@ export default function MyOrder() {
    let response = await res.json();
    await setorderData(response);
   });
-
-
-
-  // await res.map((data)=>{
-  //    console.log(data)
-  // })
  };
 
  useEffect(() => {

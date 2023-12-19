@@ -20,7 +20,6 @@ function BargainPrice() {
     }
   };
 
-  // Initial display of price
   updatePrice();
 
   return (

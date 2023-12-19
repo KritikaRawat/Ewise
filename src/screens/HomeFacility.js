@@ -7,9 +7,7 @@ import location from "../images/location.png";
 import "../styles/bargain.css";
 
 export default function HomeFacility() {
-  // <<<<<<< HEAD
-
-  // =======
+ 
   const imgStyle = {
     position: "fixed",
     top: 100,

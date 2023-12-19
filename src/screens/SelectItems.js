@@ -21,7 +21,7 @@ export default function SelectItems() {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name: itemDetails.itemName, price: itemDetails.price, email: itemDetails.price }),
+      body: JSON.stringify({ name: itemDetails.itemName, price: itemDetails.price, email: itemDetails.email }),
     });
     const json = await resp.json();
     console.log(json);

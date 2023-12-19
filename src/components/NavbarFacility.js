@@ -24,13 +24,13 @@ export default function NavbarFacility() {
             </li>
             {!localStorage.getItem("authToken") ? (
               <li className="nav-item ms-5 me-3">
-                <Link className="nav-link active" to="/">
+                <Link className="nav-link active" to="/SellerList">
                   Shop
                 </Link>
               </li>
             ) : (
               <li className="nav-item ms-5 me-3">
-                <Link className="nav-link active" to="/myOrder">
+                <Link className="nav-link active" to="/PricesonMarketplace">
                   My Marketplace
                 </Link>
               </li>

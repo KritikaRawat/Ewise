@@ -15,7 +15,6 @@ export default function Home() {
     top: 100,
     right: 50,
   };
-  // >>>>>>> c3252c614966df32e48f32112ef03f63e4f4a85b
   return (
     <div className="scrollable-container">
       <div>
